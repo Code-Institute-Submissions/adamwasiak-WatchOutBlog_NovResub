@@ -93,9 +93,11 @@
                     </p>
                     <!-- The body of the comment goes before the | -->
                     {{ comment.body | linebreaks }}
-                        {% if user.username == comment.name %}
+                        {%  if user.username == comment.name %}
 
-                        <a  i class="fas fa-trash"></i> Delete</a> |
+                        <i class="fas fa-trash"></i> 
+                        Delete 
+                        </form>    
                         <a  i class="fas fa-pen"></i> Edit</a>
 
                         {% else %}

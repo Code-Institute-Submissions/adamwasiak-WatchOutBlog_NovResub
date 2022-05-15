@@ -93,6 +93,16 @@
                     </p>
                     <!-- The body of the comment goes before the | -->
                     {{ comment.body | linebreaks }}
+                        {% if user.username == comment.name %}
+
+                        <a  i class="fas fa-trash"></i> Delete</a> |
+                        <a  i class="fas fa-pen"></i> Edit</a>
+
+                        {% else %}
+
+                        <i class="far fa-comments"></i>
+
+                        {% endif %}
                 </div>
                 <!-- Our for loop ends here -->
                 {% endfor %}

@@ -95,11 +95,12 @@
                     {{ comment.body | linebreaks }}
                         {%  if user.username == comment.name %}
 
-                        <i class="fas fa-trash"></i> 
-                        Delete 
-                        </form>    
-                        <a  i class="fas fa-pen"></i> Edit</a>
+                        <a href="{% url 'delete_comment' comment.id %}" i class="fas fa-trash"> 
+                        Delete</a> 
 
+                        </form>    
+                        <a href="{% url 'update_comment' comment.id %}" class="fas fa-pen"></i> Edit</a>
+                        </form>
                         {% else %}
 
                         <i class="far fa-comments"></i>

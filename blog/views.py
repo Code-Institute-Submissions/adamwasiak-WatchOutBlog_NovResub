@@ -1,4 +1,6 @@
 from django.shortcuts import render, get_object_or_404, reverse
+from django.urls import reverse_lazy
+from django.views.generic.edit import DeleteView, UpdateView
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post, Comment
@@ -76,3 +78,19 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+class DeleteComment(DeleteView):
+    
+    model = Comment
+    
+    def get_success_url(self):
+        return reverse('post_detail', args=[self.object.post.slug])
+
+class UpdateComment(UpdateView):
+    
+    model = Comment
+    fields = ('body',)
+
+    def get_success_url(self):
+        return reverse('post_detail', args=[self.object.post.slug])
+    

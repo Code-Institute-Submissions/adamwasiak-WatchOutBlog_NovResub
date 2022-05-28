@@ -1,3 +1,4 @@
+/* page background color styling*/
 .row {
     background-color: #c8d5df;
 }
@@ -5,14 +6,14 @@
 .bg-white {
     background-color: #7f8695!important;
 }
-
+/* logo styling*/
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
     color: #4A4A4F;
 }
-
+/* logo first word color*/
 .red-o {
     color: #e61405;
 }
@@ -45,7 +46,7 @@ p1 {
     border: none;
     background-color: transparent;
 }
-
+/* blog post image div styling*/
 .image-container {
     position: relative;
 }
@@ -57,12 +58,12 @@ p1 {
     left: -2px;
     background-color: #8096b7;
 }
-
+/* blog post author box */
 .author {
     color: #435e70;
     margin: 4px;
 }
-
+/* individual post page styling */
 .masthead {
     margin-top: 10px;
     overflow: hidden;
@@ -106,7 +107,7 @@ p1 {
 .page-link {
     color: #E84610;
 }
-
+/* individual post title styling */
 .post-title {
     margin-top: 20%;
     margin-left: 5%;

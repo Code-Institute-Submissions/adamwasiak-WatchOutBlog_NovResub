@@ -7,6 +7,7 @@ from .models import Post, Comment
 from .forms import CommentForm
 
 
+# Generic post view with pagination of 4 blog posts
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
@@ -14,6 +15,7 @@ class PostList(generic.ListView):
     paginate_by = 4
 
 
+# Detailed blog post view with get and post functions
 class PostDetail(View):
 
     def get(self, request, slug, *args, **kwargs):
@@ -67,6 +69,8 @@ class PostDetail(View):
             },
         )
 
+
+# Blog post likes
 class PostLike(View):
 
     def post(self, request, slug):
@@ -79,18 +83,24 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
+
+# Class based view to delete user comments
 class DeleteComment(DeleteView):
-    
+
     model = Comment
-    
+# After deletion of the user comment user returns to same blog post
+
     def get_success_url(self):
         return reverse('post_detail', args=[self.object.post.slug])
 
+
+# Class based view to update/edit user comments
 class UpdateComment(UpdateView):
-    
+
     model = Comment
     fields = ('body',)
+# After update of the user comment user returns to same blog post
 
     def get_success_url(self):
         return reverse('post_detail', args=[self.object.post.slug])
-    
+

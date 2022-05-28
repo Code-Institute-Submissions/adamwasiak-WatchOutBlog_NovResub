@@ -36,6 +36,7 @@
 
                     <div class="col-1">
                         <strong>
+                            <!-- Authenticated users can like posts-->
                             {% if user.is_authenticated %}
                             <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
                                {% csrf_token %}
@@ -80,11 +81,11 @@
         <div class="col-md-8 card mb-4  mt-3 ">
             <h3>Comments:</h3>
             <div class="card-body">
-                <!-- We want a for loop inside the tags to iterate through each comment in comments -->
+                <!-- Loop inside the tags to iterate through each comment in comments -->
                 {% for comment in comments %}
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
-                        <!-- The commenter's name goes here. Check the model if you're not sure what that is -->
+                        <!-- The commenter's name goes here.  -->
                         {{ comment.name }}
                         <span class=" text-muted font-weight-normal">
                             <!-- The comment's created date goes here -->
@@ -94,7 +95,7 @@
                     <!-- The body of the comment goes before the | -->
                     {{ comment.body | linebreaks }}
                         {%  if user.username == comment.name %}
-
+                    <!-- User of the comment will see delete and edit buttons next to their comment -->
                         <a href="{% url 'delete_comment' comment.id %}" i class="fas fa-trash"> 
                         Delete</a> 
 
@@ -114,13 +115,13 @@
         </div>
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
-                <!-- For later -->
+                <!-- Comment submitted gets approval message-->
                 {% if commented %}
                 <div class="alert alert-success" role="alert">
                     Your WatchOut Blog comment is pending approval. 
                 </div>
                 {% else %}
-
+                <!-- Authenticated user will see comment form -->
                 {% if user.is_authenticated %}
 
                 <h3>Leave a comment:</h3>

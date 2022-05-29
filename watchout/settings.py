@@ -31,7 +31,7 @@ DEBUG = False
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
 
-ALLOWED_HOSTS = ['watchoutblog.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['watchout.herokuapp.com', 'localhost']
 
 
 # Application definition

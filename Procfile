@@ -1,1 +1,1 @@
-web: gunicorn watchout.wsgi
+web: gunicorn watchoutblog.wsgi

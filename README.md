@@ -43,7 +43,6 @@ Please visit the website in [here](https://watchoutblog.herokuapp.com/)
 
 
 
-![Option Area](assets/images/optionsarea.jpg)
 
 
 ## Future developments
@@ -102,7 +101,6 @@ During testing the following aspects were reviewed:
 
 
 
-Thanky you to Code Institute for excellent module content, Code Institue support team and my mentor Daisy for guidance and support.
 
 
 

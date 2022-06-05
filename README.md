@@ -125,53 +125,77 @@ Comment deletion & Comment update
 
 ### 5 User stories
 
-## User Experience Design  
-
+## User Experience
 
 ## Features 
 
+The below illustrates features currently available to blog users.
+
 ### Blog navbar
+User will find navigation bar, which features WatchOutBlog logo (acting as home buttom), Home, Register and Clock In (Sign in) buttons.
 
-
+![navbar](static/images/navbar.PNG)
 
 ### Blog homepage
+Homepage includes 4 blog posts, each of which can be clicked on in order to access entire blog post.
 
 ![homepage](static/images/Homepage.PNG)
 
 ### Blog individual posts
+Individual blog posts will host blog image, content and also reflect number of likes and comments under the blog post.
 
 ![blogpost](static/images/blogpost.PNG)
 
 ### User comments 
+User comment section, under individual blog post, will allow user to read through the comments posted by other users.
+Logged in users will be able to use comment form and post their own comment.If a logged in user has already posted before, they will see Delete and Edit icons next to their own comments, allowing for further action on these. The option of deleting or editing comments is exclusively available to logged in users and only for their own comments. 
 
 ![usercomments](static/images/Usercomments.PNG)
 
 ### User comments deletion
+Logged in users who have posted comments before, will be able to delete their own comments. Upon clicking Delete icon they user will be taken to a confirmation page to confirm deletion of their comment.
 
 ![commentdeletion](static/images/commentdeletion.PNG)
 
 ### User comments update
+Logged in users who have posted comments before, will be able to update their own comments. Upon clicking Edit icon they user will be taken to a confirmation page to edit their own comment.
 
 ![commentedit](static/images/commentedit.PNG)
 
 ### User notification messages
+There is set of user notifications available to blog users. Users who log in will receive a message confirming that they logged in. Similarily users who logout will receive a message that they are logged out. In addition user who post a comment under a blog post, will receive a message that their comment is subject to administrator's approval.
 
+![usermessages](static/images/usermessages.PNG)
 
 ### User blog sign up
+New users will be able to register by creating their user name and also password.
 
 ![signup](static/images/usersignup.PNG)
 
 ### User blog sign in 
+Registered users are able to login in order to manage their comments and like posts.
 
 ![signin](static/images/usersignin.PNG)
 
 ### Blog administration
+Blog administration in terms of blog posts, comments approval is managed by Django's admin portal.
 
 ![blogpostadmin](static/images/blogpostadmin.PNG)
 
 
 ## Future developments
+The below outlines potential future developments in order to enhance user experience and to attract wider user base.
 
+- **User blog collaboration** - complete development to allow registered users to create blog posts, subject to blog owner approval.
+This would allow for a greater and more frequent content being added to the blog.
+
+- **User comments with images** - complete development which would allow registered users to post comments along with images. This would allow a greater level of user engagement when discussing watch experiences.
+
+- **Watch news** - complete development of additional page in the blog, which would pull watch related news from number of sources. This would further increase user engagement as the blog would become one stop for blog posts, discussion and also following on the latest watch news.
+
+- **User emails** - create a email confirmation issued to newly registered users who opted to provide their email address.
+
+- **Search option** - develop blog content search options which would allow users to search throughout the blog using keywords.
 
 
 ## Testing 

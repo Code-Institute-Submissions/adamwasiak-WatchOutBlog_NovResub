@@ -167,12 +167,12 @@ There is set of user notifications available to blog users. Users who log in wil
 
 ![usermessages](static/images/usermessages.PNG)
 
-### User blog sign up
+### Blog user sign up
 New users will be able to register by creating their user name and also password.
 
 ![signup](static/images/usersignup.PNG)
 
-### User blog sign in 
+### Blog user sign in 
 Registered users are able to login in order to manage their comments and like posts.
 
 ![signin](static/images/usersignin.PNG)
@@ -199,30 +199,108 @@ This would allow for a greater and more frequent content being added to the blog
 
 
 ## Testing 
-Throughout the course of testing the following key test areas were focused on:
+There has been an extenstive testing completed prior to final deployment.
+The 3 key areas of testing were related to functional, resposive user experience and code validation.
 
 **Functional**
+The functional testing has been completed manually and the test scenarios, expected results, actual results and overall test results have been captured in the document below.
 
+PLACEHOLDER FOR TEST RESULTS
 
 
 **Responsive user experience**
 
 
 
-**Code validator testing**
+**Code validation testing**
+The code itself was validated using HTML - W3C HTML Validator,CSS - Jigsaw CSS Validator and Python - PEP8Online.
+Results have been outlined below
 
 
+**HTML code validation**
 
-**HTML index file**
+The code validation process in HTML - W3C HTML Validator has provided the below results.
 
+Base.html
 
+![base](static/testing/base.png)
 
+Post_detail.html
 
-**CSS file**
+The validation had highlighted bad value error, which upon further testing does not cause any functional or performance issues.
+Due to time constraints the error will not be resolved prior to submission of this project.
+
+![post](static/testing/postdetail.png)
+
+Comment_confirm_delete.html
+
+![delete](static/testing/commentdelete.png)
+
+Comment_form.html
+
+![update](static/testing/commentedit.png)
+
+Login.html
+
+![login](static/testing/login.png)
+
+Logout.html
+
+![logout](static/testing/logout.png)
+
+Signup.html
+
+![signup](static/testing/signup.png)
+
+**Python code validation**
+
+The code validation process in PEP8Online has not highlighted any code errors.
+The screenshots confirming validation outcomes may include some details of the code however none of this is confidential or something, which could pose security concern.
+
+Admin.py
+
+![admin](static/testing/adminpy.png)
+
+Apps.py
+
+![apps](static/testing/appspy.png)
+
+Forms.py
+
+![forms](static/testing/formspy.png)
+
+Model.py
+
+![model](static/testing/modelpy.png)
+
+Settings.py
+
+![settings](static/testing/settingspy.png)
+
+Urls.py
+
+![urls](static/testing/urlspy.png)
+
+Views.py
+
+![views](static/testing/viewspy.png)
+
+**CSS code validation**
+The code validation process in Jigsaw CSS Validator has not highlighted code errors.
+
+![css](static/testing/css.png)
 
 **Lighthouse – Dev Tools**
 
+Lighthouse testing has been also completed for both, desktop and mobile.
 
+*Desktop*
+
+![lighthousedesktop](static/testing/desktoplighthouse.PNG)
+
+*Mobile* 
+
+![lighthousemobile](static/testing/mobilelighthouse.PNG)
 
 
 **Bugs**

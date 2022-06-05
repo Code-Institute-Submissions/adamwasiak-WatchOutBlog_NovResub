@@ -132,7 +132,7 @@ Comment deletion & Comment update
 
 ### Blog navbar
 
-![navbar](static/images/navbar.PNG)
+
 
 ### Blog homepage
 
@@ -156,7 +156,6 @@ Comment deletion & Comment update
 
 ### User notification messages
 
-![usermessages](static/images/usermessages.PNG)
 
 ### User blog sign up
 

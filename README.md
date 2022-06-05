@@ -305,16 +305,36 @@ Lighthouse testing has been also completed for both, desktop and mobile.
 
 **Bugs**
 
-  **Fixed Bugs**
+ **Fixed Bugs**
+ 
+ The following bugs have been identified and subsequently fixed in the course of the project development:
+ 
+ - during intitial deployment to Heroku, the env.py file was placed in a sub folder preventing successful deployment of the application.
+ 
+**Status: Resolved**
+ 
+ - user sign up issues were experienced post application deployment as as a result of incorrectly split code lines in settings.py file.
+ 
+**Status: Resolved**
   
+- final development deployment to Heroku had experienced issues with application being built as a result of database settings value mismatch between Heroku and Git development environment. 
 
+**Status: Resolved**
   
-  **Unfixed Busg**
-  
-
+ **Unfixed Bugs**
+ 
+ The following bug remains unfixed:
+ 
+ - in the blog admin portal when trying to execute search, an error occurs and no search results are returned.
+ This bug remains unfixed at this moment.
 
  
 ## Deployment 
+
+The application was deployed in Heroku.
+
+The following steps have been taken as part of Heroku deployment process:
+
 
 
 ## Credits

@@ -335,10 +335,65 @@ The application was deployed in Heroku.
 
 The following steps have been taken as part of Heroku deployment process:
 
+- Log in to Heroku.
+- From the main Heroku Dashboard page select 'New' and then 'Create New App'.
+- Provide a project name - I selected Watchoutblog and select a suitable region, then select create app. The name for the app must be unique.
+- This will create the app within Heroku and bring you to the deploy tab. From the submenu at the top, navigate to the resources tab.
+- Add the database to the app, in the add-ons section search for 'Heroku Postgres', select the package that appears and add 'Heroku Postgres' as the database.
+- Navigate to the setting tab, within the config vars section copy the DATABASE_URL to the clipboard for use in the Django configuration.
+- In the django app repository create a new file called env.py - within this file import the os library and set the environment variable for the DATABASE_URL pasting in the address copied from Heroku. The line should appear as os.environ["DATABASE_URL"]= "database value from Heroku".
+- Secret key also needs to be added in the env.py file and the same must be reflected in Heroku Config Vars with the name "SECRET_KEY". Env.py file must contain os.environ["SECRET_KEY"] = "secret key value ".
+- In Heroku, add the CLOUDINARY_URL and add related value as it was set up in Env.py file. (following earlier Cloudindary setup)
+- Once all the Config Vars are correctly configured and aligned with repository, go to Deploy tab in Heroku. In this section Github repository can be connected to. Once connected, the deployment can be initiated by clicking on Deploy Branch. 
+- The process of building the application will be visible to a user in Heroku’s UI and any potential issues will be flagged.
+- Once the build is completed Heroku will confirm completing the task.
+
+This project's initial deployment was completed by connecting to Heroku via Gitpod. This was completed by using “heroku login -I” command, entering Heroku credentials and subsequent push to Heroku. (using command “git push heroku main”).
 
 
 ## Credits
 
+-Images and text content credits related to Blog posts:
+
+- Blog post- Fossil- budget alternative?
+
+   Image credit: https://unsplash.com/@fabianheimann
+
+   Text content credit: Wikipedia
+
+- Blog post- Seiko- timepiece of Japan?
+
+   Image credit: https://unsplash.com/@notafraid
+   
+   Text content credit: Wikipedia
+
+- Blog post- Arbre - new in the market?
+
+   Image credit: https://unsplash.com/@klickors
+
+   Text content credit: https://www.arbrewatches.com/AboutUs-British-London-England-UK-unitedkingdom
+
+- Blog post- Felippe - any idea what it is?
+
+   Image credit: https://unsplash.com/@philgmonte
+   
+   Text content credit: Wikipedia
+
+- Blog post- Orient - another Japanese brand
+
+   Image credit: https://unsplash.com/@notafraid
+
+   Text content credit: Wikipedia
+
+- Blog post- Bulova - worth considering?
+
+   Image credit: https://unsplash.com/@rymrtn
+
+   Text content credit: Wikipedia
+
+-The project idea and concept was influenced by Code Institute's "I think therefore I Blog " tutorial.
+
+-Thanky you to Code Institute for excellent module content, Code Institue support team and my mentor Daisy for guidance and support.
 
 
 

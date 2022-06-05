@@ -1,7 +1,7 @@
 # WatchOutBlog 
 Blog for watch enthusiasts created by watch enthusiast.
 
-Please visit the blog in [here](https://watchoutblog.herokuapp.com/)
+Please visit the blog in [here](https://watchoutblog.herokuapp.com/).
 
 ## Introduction and purpose
 
@@ -130,9 +130,45 @@ Comment deletion & Comment update
 
 ## Features 
 
-### Homepage
+### Blog navbar
 
+![navbar](static/images/navbar.PNG)
 
+### Blog homepage
+
+![homepage](static/images/Homepage.PNG)
+
+### Blog individual posts
+
+![blogpost](static/images/blogpost.PNG)
+
+### User comments 
+
+![usercomments](static/images/Usercomments.PNG)
+
+### User comments deletion
+
+![commentdeletion](static/images/commentdeletion.PNG)
+
+### User comments update
+
+![commentedit](static/images/commentedit.PNG)
+
+### User notification messages
+
+![usermessages](static/images/usermessages.PNG)
+
+### User blog sign up
+
+![signup](static/images/usersignup.PNG)
+
+### User blog sign in 
+
+![signin](static/images/usersignin.PNG)
+
+### Blog administration
+
+![blogpostadmin](static/images/blogpostadmin.PNG)
 
 
 ## Future developments

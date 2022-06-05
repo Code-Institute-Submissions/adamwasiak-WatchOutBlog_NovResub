@@ -52,23 +52,77 @@ As part of the development the following languages were used:
 **Database**
 The blog application required a database structure, which would support managing blogger's blog posts, storing relavant content and images.
 The database also needed to store users information and their interactions with the blog through comments and likes.
-For the purpose of managing database related needs, Postgres was selected as a solution for this project.
+For the purpose of managing database related needs, Postgresql was selected as a solution for this project.
 
 The below reflects database schema developed in order to support the needs of this project.
 
 DATABASE SCHEMA PLACEHOLDER
 
 **Development**
-For the purpose of development of this project GitHub and Git were used. 
-GitHub respository was used to store the project's code after being pushed from Gitpod.
-Gitpod IDE was used for version control by utilizing the Gitpod terminal to commit and Push to GitHub.
-
-
+For the purpose of development of this project a number of technologies were used. 
+- GitHub respository was used to store the project's code after being pushed from Gitpod.
+- Gitpod IDE was used for version control by utilizing the Gitpod terminal to commit and Push to GitHub.
+- Django framework was used to develop structure of the blog and also to use some of the already developed functions of Django such as user authorisation, admin portal and others.
+- Bootstrap5 was used for construction of the blog application and responsivness.
+- Cloudinary was used for a purpose of managing images required for running the application.
+- Summernote for the purpose of enhanced text editing when managing blog posts.
+- Crispy forms library 
+- DrawSQL was used for drawing database schema.
+- Balsamiq was used for creation of wireframes during the initial design process.
+- Google
 
 **Deployment and application hosting**
-
+The application has been deployed and it is hosted on Heroku.
+The deployment process has been outlined in a more detailed manner in the latter part of this document.
 
 ### 4 Wireframes 
+
+As part of the design process for this process a set of wireframes have been created using Balsamiq application.
+The purpose of the wireframes below was to visualise indicatively the user experience, which the blog user will get once the application was fully operation.
+
+The wireframing has been completed for desktop and mobile users.
+
+**Desktop**
+
+Homepage
+
+![desktophome](static/wireframes/desktophome.PNG)
+
+Blog post, comment section and user comment form
+
+![dekstopblogpost](static/wireframes/desktoppost.PNG)
+
+User Sign up
+
+![desktopsignup](static/wireframes/desktopsignup.PNG)
+
+User Login
+
+![desktopsignin](static/wireframes/desktoplogin.PNG)
+
+Comment deletion
+
+![desktopdeletecomment](static/wireframes/desktopdeletecomment.PNG)
+
+Comment update
+
+![desktopupdatecomment](static/wireframes/desktopupdatecomment.PNG)
+
+**Mobile**
+
+Homepage & Blog post, comment section and user comment form
+
+![mobilehome](static/wireframes/mobilehome.PNG)                ![mobileblogpost](static/wireframes/mobilepost.PNG)
+
+User Sign up & User Login 
+
+![mobilesignup](static/wireframes/mobilesignup.PNG)            ![mobilesignin](static/wireframes/mobilelogin.PNG)
+
+Comment deletion & Comment update
+
+![mobiledeletecomment](static/wireframes/mobiledeletecomment.PNG) ![mobileupdatecomment](static/wireframes/mobileupdatecomment.PNG)
+
+
 ### 5 User stories
 
 ## User Experience Design  

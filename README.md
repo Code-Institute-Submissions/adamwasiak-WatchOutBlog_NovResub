@@ -1,108 +1,234 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# WatchOutBlog 
+Blog for watch enthusiasts created by watch enthusiast.
 
-Welcome adamwasiak,
+Please visit the blog in [here](https://watchoutblog.herokuapp.com/).
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Introduction and purpose
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+The WatchOutBlog has been developed as part of the Milestone project 4 for Code Institute Diploma in Software Development with eCommerce.
+The WatchOutBlog is a website blog built in Django, incorporating Python, CSS and HTML.
 
-## Gitpod Reminders
+The blog and its content, in terms of blog posts, is administered by WatchOutBlogger. The nature of the blog posts will be a mix of educational and brand review posts with the overall aim of creating engagement in the watch community across the globe.
+The blog community may engage with the WatchOutBlogger as well as other blog users by creating comments under each blog post. Users may also like blog posts to express their interests in specific blog types. The engagement of the blog user is only possible post completion prior user registration process. 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+![Multidevice view](static/multidevice/all-devices-black.png)
 
-`python3 -m http.server`
+## Design 
 
-A blue button should appear to click: _Make Public_,
+The below section of the document outlines development journey of the blog starting from the concept to ultimate solution used to develop the blog.
 
-Another blue button should appear to click: _Open Browser_.
+### 1 Concept
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The overall concept was to develop a blog, which would be administered by its owner. The purpose was to provide educational and brand review blog posts.
+Blog users would be invited to register and post completion registration process would be allowed to engage in community through blog posts comments and likes.
 
-A blue button should appear to click: _Make Public_,
+In order to appeal to users the blog needed to be visual, therefore homepage is diveded into 4 sections allowing for a good quality picture to give sense to a user in relation to nature of each blog post. In additionl each blog post has blog title associated as well as the date and time as to when it was created.
+In order to give a sense of community engagement for each of the blog posts, each blog post on the homepage will also reflect numbre of likes and number of comments.
 
-Another blue button should appear to click: _Open Browser_.
+### 2 Functional scope 
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+In terms of overall functional scope the following 4 key areas were needed to be developed in order for the blog to operate as required:
 
-To log into the Heroku toolbelt CLI:
+**Blog administration** - blog owner to be able to create, post and manage respective blog posts. Blog owner shoudl be also able to manage user comments through approval and where required a deletion process.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+**User administration** - blog users to be able to register and login in order to interact with the blogger and other blog users.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+**User comments** - registered and logged blog users should be in position to comment on individual blog posts. Users should be also allowed to update and delete their own comments.
+   
+**User blog likes** - registered and logged blog users should be in position to like individual blog posts. The functionality shoudl also allow for blog users to reverse "a like" previously given to a particular blog post.
 
-------
+### 3 Solution 
 
-## Release History
+In order to develop a website based blog, and given the functional needs the following solutions were used:
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+**Languagues**
+Given the fact that nature of the application indicates a need for a frequent content manipulation, a standard HTML solution will not work.
+The solution needed to incorporate Python in order to make the solution more agile, in terms of development of relevant functions and in order for the user actions to be able to interact with the database in place. 
+As part of the development the following languages were used:
+- HTML
+- CSS
+- Python
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+**Database**
+The blog application required a database structure, which would support managing blogger's blog posts, storing relavant content and images.
+The database also needed to store users information and their interactions with the blog through comments and likes.
+For the purpose of managing database related needs, Postgresql was selected as a solution for this project.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+The below reflects database schema developed in order to support the needs of this project.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+DATABASE SCHEMA PLACEHOLDER
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+**Development**
+For the purpose of development of this project a number of technologies were used. 
+- GitHub respository was used to store the project's code after being pushed from Gitpod.
+- Gitpod IDE was used for version control by utilizing the Gitpod terminal to commit and Push to GitHub.
+- Django framework was used to develop structure of the blog and also to use some of the already developed functions of Django such as user authorisation, admin portal and others.
+- Bootstrap5 was used for construction of the blog application and responsivness.
+- Cloudinary was used for a purpose of managing images required for running the application.
+- Summernote for the purpose of enhanced text editing when managing blog posts.
+- Crispy forms library 
+- DrawSQL was used for drawing database schema.
+- Balsamiq was used for creation of wireframes during the initial design process.
+- Google
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+**Deployment and application hosting**
+The application has been deployed and it is hosted on Heroku.
+The deployment process has been outlined in a more detailed manner in the latter part of this document.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### 4 Wireframes 
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+As part of the design process for this process a set of wireframes have been created using Balsamiq application.
+The purpose of the wireframes below was to visualise indicatively the user experience, which the blog user will get once the application was fully operation.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+The wireframing has been completed for desktop and mobile users.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+**Desktop**
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+Homepage
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![desktophome](static/wireframes/desktophome.PNG)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+Blog post, comment section and user comment form
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+![dekstopblogpost](static/wireframes/desktoppost.PNG)
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+User Sign up
 
-------
+![desktopsignup](static/wireframes/desktopsignup.PNG)
 
-## FAQ about the uptime script
+User Login
 
-**Why have you added this script?**
+![desktopsignin](static/wireframes/desktoplogin.PNG)
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Comment deletion
 
-**How will this affect me?**
+![desktopdeletecomment](static/wireframes/desktopdeletecomment.PNG)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+Comment update
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+![desktopupdatecomment](static/wireframes/desktopupdatecomment.PNG)
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+**Mobile**
 
-**So….?**
+Homepage & Blog post, comment section and user comment form
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+![mobilehome](static/wireframes/mobilehome.PNG)                ![mobileblogpost](static/wireframes/mobilepost.PNG)
 
-**Can I opt out?**
+User Sign up & User Login 
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![mobilesignup](static/wireframes/mobilesignup.PNG)            ![mobilesignin](static/wireframes/mobilelogin.PNG)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+Comment deletion & Comment update
 
-**Anything more?**
+![mobiledeletecomment](static/wireframes/mobiledeletecomment.PNG) ![mobileupdatecomment](static/wireframes/mobileupdatecomment.PNG)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
+### 5 User stories
 
-Happy coding!
+## User Experience Design  
+
+
+## Features 
+
+### Blog navbar
+
+
+
+### Blog homepage
+
+![homepage](static/images/Homepage.PNG)
+
+### Blog individual posts
+
+![blogpost](static/images/blogpost.PNG)
+
+### User comments 
+
+![usercomments](static/images/Usercomments.PNG)
+
+### User comments deletion
+
+![commentdeletion](static/images/commentdeletion.PNG)
+
+### User comments update
+
+![commentedit](static/images/commentedit.PNG)
+
+### User notification messages
+
+
+### User blog sign up
+
+![signup](static/images/usersignup.PNG)
+
+### User blog sign in 
+
+![signin](static/images/usersignin.PNG)
+
+### Blog administration
+
+![blogpostadmin](static/images/blogpostadmin.PNG)
+
+
+## Future developments
+
+
+
+## Testing 
+Throughout the course of testing the following key test areas were focused on:
+
+**Functional**
+
+
+
+**Responsive user experience**
+
+
+
+**Code validator testing**
+
+
+
+**HTML index file**
+
+
+
+
+**CSS file**
+
+**Lighthouse – Dev Tools**
+
+
+
+
+**Bugs**
+
+  **Fixed Bugs**
+  
+
+  
+  **Unfixed Busg**
+  
+
+
+ 
+## Deployment 
+
+
+## Credits
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

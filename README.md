@@ -203,13 +203,12 @@ There has been an extenstive testing completed prior to final deployment.
 The 3 key areas of testing were related to functional, resposive user experience and code validation.
 
 **Functional**
-The functional testing has been completed manually and the test scenarios, expected results, actual results and overall test results have been captured in the document below.
 
-PLACEHOLDER FOR TEST RESULTS
+The functional testing has been completed manually and the test scenarios and the test results have been captured in the document below.
+The document breaks the test scripts into a number of functional group. Overall testing has been successful , with only 1 aspect being identified as an issue.
+The issue has been noted in the unfixed bugs section below.
 
-
-**Responsive user experience**
-
+![tests](static/testing/testresults.PNG)
 
 
 **Code validation testing**

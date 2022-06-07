@@ -56,7 +56,8 @@ For the purpose of managing database related needs, Postgresql was selected as a
 
 The below reflects database schema developed in order to support the needs of this project.
 
-DATABASE SCHEMA PLACEHOLDER
+![database](static/images/database.PNG)
+
 
 **Development**
 For the purpose of development of this project a number of technologies were used. 

@@ -9,7 +9,7 @@ The WatchOutBlog has been developed as part of the Milestone project 4 for Code 
 The WatchOutBlog is a website blog built in Django, incorporating Python, CSS and HTML.
 
 The blog and its content, in terms of blog posts, is administered by WatchOutBlogger. The nature of the blog posts will be a mix of educational and brand review posts with the overall aim of creating engagement in the watch community across the globe.
-The blog community may engage with the WatchOutBlogger as well as other blog users by creating comments under each blog post. Users may also like blog posts to express their interests in specific blog types. The engagement of the blog user is only possible post completion prior user registration process. 
+The blog community may engage with the WatchOutBlogger as well as other blog users by creating comments under each blog post. Users may also like blog posts to express their interests in specific blog types. The engagement of the blog user through comments posting or blog likes is only possible post completion prior user registration process. 
 
 ![Multidevice view](static/multidevice/all-devices-black.png)
 
@@ -20,29 +20,29 @@ The below section of the document outlines development journey of the blog start
 ### 1 Concept
 
 The overall concept was to develop a blog, which would be administered by its owner. The purpose was to provide educational and brand review blog posts.
-Blog users would be invited to register and post completion registration process would be allowed to engage in community through blog posts comments and likes.
+Blog users would be invited to register and post completion of the registration process, would be allowed to engage in community through blog posts comments and likes.
 
-In order to appeal to users the blog needed to be visual, therefore homepage is diveded into 4 sections allowing for a good quality picture to give sense to a user in relation to nature of each blog post. In additionl each blog post has blog title associated as well as the date and time as to when it was created.
-In order to give a sense of community engagement for each of the blog posts, each blog post on the homepage will also reflect numbre of likes and number of comments.
+In order to appeal to users, the blog needed to be visual, therefore homepage is divided into 4 sections allowing for a good quality pictures to give sense to users in relation to nature of each blog post. In addition, each blog post has blog title associated as well as the date and time as to when it was created.
+In order to give a sense of community engagement for each of the blog posts, each blog post on the homepage will also reflect number of likes and number of comments.
 
 ### 2 Functional scope 
 
 In terms of overall functional scope the following 4 key areas were needed to be developed in order for the blog to operate as required:
 
-**Blog administration** - blog owner to be able to create, post and manage respective blog posts. Blog owner shoudl be also able to manage user comments through approval and where required a deletion process.
+**Blog administration** - blog owner to be able to create, post and manage respective blog posts. Blog owner should be also able to manage user comments through approval process, and where required a deletion process.
 
 **User administration** - blog users to be able to register and login in order to interact with the blogger and other blog users.
 
 **User comments** - registered and logged blog users should be in position to comment on individual blog posts. Users should be also allowed to update and delete their own comments.
    
-**User blog likes** - registered and logged blog users should be in position to like individual blog posts. The functionality shoudl also allow for blog users to reverse "a like" previously given to a particular blog post.
+**User blog likes** - registered and logged blog users should be in position to like individual blog posts. The functionality should also allow for blog users to reverse "a like" previously given to a particular blog post.
 
 ### 3 Solution 
 
 In order to develop a website based blog, and given the functional needs the following solutions were used:
 
-**Languagues**
-Given the fact that nature of the application indicates a need for a frequent content manipulation, a standard HTML solution will not work.
+**Languages**
+Given the fact that the nature of the application indicated a need for a frequent content manipulation, a standard HTML solution would not work.
 The solution needed to incorporate Python in order to make the solution more agile, in terms of development of relevant functions and in order for the user actions to be able to interact with the database in place. 
 As part of the development the following languages were used:
 - HTML
@@ -50,7 +50,7 @@ As part of the development the following languages were used:
 - Python
 
 **Database**
-The blog application required a database structure, which would support managing blogger's blog posts, storing relavant content and images.
+The blog application required a database structure, which would support managing blogger's blog posts, storing relevant content and images.
 The database also needed to store users information and their interactions with the blog through comments and likes.
 For the purpose of managing database related needs, Postgresql was selected as a solution for this project.
 
@@ -61,10 +61,10 @@ The below reflects database schema developed in order to support the needs of th
 
 **Development**
 For the purpose of development of this project a number of technologies were used. 
-- GitHub respository was used to store the project's code after being pushed from Gitpod.
+- GitHub repository was used to store the project's code after being pushed from Gitpod.
 - Gitpod IDE was used for version control by utilizing the Gitpod terminal to commit and Push to GitHub.
 - Django framework was used to develop structure of the blog and also to use some of the already developed functions of Django such as user authorisation, admin portal and others.
-- Bootstrap5 was used for construction of the blog application and responsivness.
+- Bootstrap5 was used for construction of the blog application and responsiveness.
 - Cloudinary was used for a purpose of managing images required for running the application.
 - Summernote for the purpose of enhanced text editing when managing blog posts.
 - Crispy forms library 
@@ -127,7 +127,7 @@ Comment deletion & Comment update
 ### 5 User Stories
 
 The development of the project was based on User Stories created for the purpose of this project. The User stories were created and managed through a Kanban board available in GitHub. 
-There were total of 12 User Stories which had been completed as part of this development. The User Stories had been labelled according to reflect 3 catergories assigned such as: Must-Have, Should-Have and Could-Have. The progress in development was reflected in User Stories being moved from To Do, In Progress to Done section of the Kanban board. In addition to 12 User Stories aformentioned above, there were additionl 5 User Stories created and labelled as Won't-Have. These are related to future planned devlopments.
+There were total of 12 User Stories which had been completed as part of this development. The User Stories had been labelled according to reflect 3 categories assigned such as: Must-Have, Should-Have and Could-Have. The progress in development was reflected in User Stories being moved from To Do, In Progress to Done section of the Kanban board. In addition to 12 User Stories aforementioned above, there were additional 5 User Stories created and labelled as Won't-Have. These are related to future planned developments.
 
 All of the User Stories for this project can be accessed [here](https://github.com/adamwasiak/WatchOutBlog/projects/2).
 
@@ -139,7 +139,7 @@ All of the User Stories for this project can be accessed [here](https://github.c
 The below illustrates features currently available to blog users.
 
 ### Blog navbar
-User will find navigation bar, which features WatchOutBlog logo (acting as home buttom), Home, Register and Clock In (Sign in) buttons.
+User will find navigation bar, which features WatchOutBlog logo (acting as home button), Home, Register and Clock In (Sign in) buttons.
 
 ![navbar](static/images/navbar.PNG)
 
@@ -154,8 +154,8 @@ Individual blog posts will host blog image, content and also reflect number of l
 ![blogpost](static/images/blogpost.PNG)
 
 ### User comments 
-User comment section, under individual blog post, will allow user to read through the comments posted by other users.
-Logged in users will be able to use comment form and post their own comment.If a logged in user has already posted before, they will see Delete and Edit icons next to their own comments, allowing for further action on these. The option of deleting or editing comments is exclusively available to logged in users and only for their own comments. 
+User comment section, under individual blog post, will allow users to read through the comments posted by other users.
+Logged in users will be able to use comment form and post their own comments. If a logged in user has already posted before, they will see Delete and Edit icons next to their own comments, allowing for further action on these. The option of deleting or editing comments is exclusively available to logged in users and only for their own comments. 
 
 ![usercomments](static/images/Usercomments.PNG)
 
@@ -170,12 +170,12 @@ Logged in users who have posted comments before, will be able to update their ow
 ![commentedit](static/images/commentedit.PNG)
 
 ### User notification messages
-There is set of user notifications available to blog users. Users who log in will receive a message confirming that they logged in. Similarily users who logout will receive a message that they are logged out. In addition user who post a comment under a blog post, will receive a message that their comment is subject to administrator's approval.
+There is set of user notifications available to blog users. Users who log in will receive a message confirming that they logged in. Similarly users who logout will receive a message that they are logged out. In addition users who post a comment under a blog post, will receive a message that their comment is subject to administrator's approval.
 
 ![usermessages](static/images/usermessages.PNG)
 
 ### Blog user sign up
-New users will be able to register by creating their user name and also password.
+New users will be able to register by creating their username and also password.
 
 ![signup](static/images/usersignup.PNG)
 
@@ -206,13 +206,13 @@ This would allow for a greater and more frequent content being added to the blog
 
 
 ## Testing 
-There has been an extenstive testing completed prior to final deployment.
-The 3 key areas of testing were related to functional, resposive user experience and code validation.
+There has been an extensive testing completed prior to final deployment.
+The 3 key areas of testing were related to functional, responsive user experience and code validation.
 
 **Functional**
 
 The functional testing has been completed manually and the test scenarios and the test results have been captured in the document below.
-The document breaks the test scripts into a number of functional group. Overall testing has been successful , with only 1 aspect being identified as an issue.
+The document breaks the test scripts into a number of functional group. Overall testing has been successful, with only 1 aspect being identified as an issue.
 The issue has been noted in the unfixed bugs section below.
 
 ![tests](static/testing/testresults.PNG)
@@ -315,7 +315,7 @@ Lighthouse testing has been also completed for both, desktop and mobile.
  
  The following bugs have been identified and subsequently fixed in the course of the project development:
  
- - during intitial deployment to Heroku, the env.py file was placed in a sub folder preventing successful deployment of the application.
+ - during initial deployment to Heroku, the env.py file was placed in a sub folder preventing successful deployment of the application.
  
 **Status: Resolved**
  
@@ -399,7 +399,7 @@ This project's initial deployment was completed by connecting to Heroku via Gitp
 
 -The project idea and concept was influenced by Code Institute's "I think therefore I Blog " tutorial.
 
--Thanky you to Code Institute for excellent module content, Code Institue support team and my mentor Daisy for guidance and support.
+-Thank you to Code Institute for excellent module content, Code Instite support team and my mentor Daisy for guidance and support.
 
 
 

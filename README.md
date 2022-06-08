@@ -124,7 +124,13 @@ Comment deletion & Comment update
 ![mobiledeletecomment](static/wireframes/mobiledeletecomment.PNG) ![mobileupdatecomment](static/wireframes/mobileupdatecomment.PNG)
 
 
-### 5 User stories
+### 5 User Stories
+
+The development of the project was based on User Stories created for the purpose of this project. The User stories were created and managed through a Kanban board available in GitHub. 
+There were total of 12 User Stories which had been completed as part of this development. The User Stories had been labelled according to reflect 3 catergories assigned such as: Must-Have, Should-Have and Could-Have. The progress in development was reflected in User Stories being moved from To Do, In Progress to Done section of the Kanban board. In addition to 12 User Stories aformentioned above, there were additionl 5 User Stories created and labelled as Won't-Have. These are related to future planned devlopments.
+
+All of the User Stories for this project can be accessed [here](https://github.com/adamwasiak/WatchOutBlog/projects/2).
+
 
 ## User Experience
 

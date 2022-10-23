@@ -43,6 +43,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_logout' %}">Logout</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'content' %}">Request Content</a>
+                    </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'account_signup' %}">Register</a>
@@ -51,7 +54,7 @@
                         <a class="nav-link" href="{% url 'account_login' %}">Clock In</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'account_login' %}">Request Content</a>
+                        <a class="nav-link" href="{% url 'content' %}">Request Content</a>
                     </li>
                     {% endif %}
                 </ul>

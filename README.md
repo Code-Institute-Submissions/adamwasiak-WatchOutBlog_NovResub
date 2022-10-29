@@ -109,6 +109,10 @@ Comment update
 
 ![desktopupdatecomment](static/wireframes/desktopupdatecomment.PNG)
 
+Request Content 
+
+![desktopcontent](static/wireframes/desktopcontent.PNG)
+
 **Mobile**
 
 Homepage & Blog post, comment section and user comment form
@@ -122,6 +126,10 @@ User Sign up & User Login
 Comment deletion & Comment update
 
 ![mobiledeletecomment](static/wireframes/mobiledeletecomment.PNG) ![mobileupdatecomment](static/wireframes/mobileupdatecomment.PNG)
+
+Content Request 
+
+![mobilecontent](static/wireframes/mobilecontent.PNG)
 
 
 ### 5 User Stories

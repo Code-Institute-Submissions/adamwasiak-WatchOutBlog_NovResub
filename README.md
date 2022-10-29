@@ -157,7 +157,7 @@ User will find navigation bar, which features WatchOutBlog logo (acting as home 
 ### Blog homepage
 Homepage includes 4 blog posts, each of which can be clicked on in order to access entire blog post.
 
-![homepage](static/images/Homepage.PNG)
+![homepage](static/images/homepage.PNG)
 
 ### Blog individual posts
 Individual blog posts will host blog image, content and also reflect number of likes and comments under the blog post.

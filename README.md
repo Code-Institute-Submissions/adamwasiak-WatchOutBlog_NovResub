@@ -9,7 +9,7 @@ The WatchOutBlog has been developed as part of the Milestone project 4 for Code 
 The WatchOutBlog is a website blog built in Django, incorporating Python, CSS and HTML.
 
 The blog and its content, in terms of blog posts, is administered by WatchOutBlogger. The nature of the blog posts will be a mix of educational and brand review posts with the overall aim of creating engagement in the watch community across the globe.
-The blog community may engage with the WatchOutBlogger as well as other blog users by creating comments under each blog post. Users may also like blog posts to express their interests in specific blog types. The engagement of the blog user through comments posting or blog likes is only possible post completion prior user registration process. 
+The blog community may engage with the WatchOutBlogger as well as other blog users by creating comments under each blog post. Users may also like blog posts to express their interests in specific blog types. The engagement of the blog user through comments posting or blog likes is only possible post completion prior user registration process. Registered and unregistered users may request specific blog content by using Request Content form to submit their content wishes.
 
 ![Multidevice view](static/multidevice/all-devices-black.png)
 
@@ -24,6 +24,7 @@ Blog users would be invited to register and post completion of the registration 
 
 In order to appeal to users, the blog needed to be visual, therefore homepage is divided into 4 sections allowing for a good quality pictures to give sense to users in relation to nature of each blog post. In addition, each blog post has blog title associated as well as the date and time as to when it was created.
 In order to give a sense of community engagement for each of the blog posts, each blog post on the homepage will also reflect number of likes and number of comments.
+Blog users may also request specific content from the WatchOutBlogger by using Request Content form.
 
 ### 2 Functional scope 
 
@@ -36,6 +37,8 @@ In terms of overall functional scope the following 4 key areas were needed to be
 **User comments** - registered and logged blog users should be in position to comment on individual blog posts. Users should be also allowed to update and delete their own comments.
    
 **User blog likes** - registered and logged blog users should be in position to like individual blog posts. The functionality should also allow for blog users to reverse "a like" previously given to a particular blog post.
+
+**Request Content** - registered and unregistered blog users may use the Request Content form to submit their content wishes to the blog owner. 
 
 ### 3 Solution 
 
@@ -51,8 +54,8 @@ As part of the development the following languages were used:
 
 **Database**
 The blog application required a database structure, which would support managing blogger's blog posts, storing relevant content and images.
-The database also needed to store users information and their interactions with the blog through comments and likes.
-For the purpose of managing database related needs, Postgresql was selected as a solution for this project.
+The database also needed to store users information and their interactions with the blog through comments and likes. The database also has a model to store blog 
+content requests from blog users. For the purpose of managing database related needs, Postgresql was selected as a solution for this project.
 
 The below reflects database schema developed in order to support the needs of this project.
 
@@ -135,7 +138,7 @@ Content Request
 ### 5 User Stories
 
 The development of the project was based on User Stories created for the purpose of this project. The User stories were created and managed through a Kanban board available in GitHub. 
-There were total of 12 User Stories which had been completed as part of this development. The User Stories had been labelled according to reflect 3 categories assigned such as: Must-Have, Should-Have and Could-Have. The progress in development was reflected in User Stories being moved from To Do, In Progress to Done section of the Kanban board. In addition to 12 User Stories aforementioned above, there were additional 5 User Stories created and labelled as Won't-Have. These are related to future planned developments.
+There were total of 13 User Stories which had been completed as part of this development. The User Stories had been labelled according to reflect 3 categories assigned such as: Must-Have, Should-Have and Could-Have. The progress in development was reflected in User Stories being moved from To Do, In Progress to Done section of the Kanban board. In addition to 13 User Stories aforementioned above, there were additional 5 User Stories created and labelled as Won't-Have. These are related to future planned developments.
 
 All of the User Stories for this project can be accessed [here](https://github.com/adamwasiak/WatchOutBlog/projects/2).
 
@@ -191,6 +194,11 @@ New users will be able to register by creating their username and also password.
 Registered users are able to login in order to manage their comments and like posts.
 
 ![signin](static/images/usersignin.PNG)
+
+### Request Content 
+Registered and unregistered users may use Request Content form to submit their specific content wishes to WatchOutBlogger.
+
+![content](static/images/content.PNG)
 
 ### Blog administration
 Blog administration in terms of blog posts, comments approval is managed by Django's admin portal.

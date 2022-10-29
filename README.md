@@ -203,7 +203,7 @@ Registered and unregistered users may use Request Content form to submit their s
 ### Blog administration
 Blog administration in terms of blog posts, comments approval is managed by Django's admin portal.
 
-![blogpostadmin](static/images/blogpostadmin.PNG)
+![blogpostadmin](static/testing/blogpostadmin.PNG)
 
 
 ## Future developments
@@ -274,10 +274,20 @@ Signup.html
 
 ![signup](static/testing/signup.png)
 
+Content.html
+
+![content](static/testing/contenthtml.PNG)
+
+Success.html
+
+![success](static/testing/success.PNG)
+
+
 **Python code validation**
 
-The code validation process in PEP8Online has not highlighted any code errors.
+The code validation process was completed in PEP8Online for the below code files.
 The screenshots confirming validation outcomes may include some details of the code however none of this is confidential or something, which could pose security concern.
+Note: the validation for below files was completed back in June 2022 when PEP8Online was still available.
 
 Admin.py
 
@@ -306,6 +316,33 @@ Urls.py
 Views.py
 
 ![views](static/testing/viewspy.png)
+
+For the added Content application python files code validation was completed using pycodestyles validation in Gitpod.
+Below screenshot demonstrate that no issues were detected in the below code files, which are part of the Content app.
+
+Admin.py
+
+![contentadmin](static/testing/contentadmin.PNG)
+
+Apps.py
+
+![contentapps](static/testing/contentapps.PNG)
+
+Forms.py
+
+![contentforms](static/testing/contentforms.PNG)
+
+Models.py
+
+![contentmodels](static/testing/contentmodels.PNG)
+
+Urls.py
+
+![contenturls](static/testing/contenturls.PNG)
+
+Views.py
+
+![contentviews](static/testing/contentviews.PNG)
 
 **CSS code validation**
 The code validation process in Jigsaw CSS Validator has not highlighted code errors.

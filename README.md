@@ -109,6 +109,10 @@ Comment update
 
 ![desktopupdatecomment](static/wireframes/desktopupdatecomment.PNG)
 
+Request Content 
+
+![desktopcontent](static/wireframes/desktopcontent.PNG)
+
 **Mobile**
 
 Homepage & Blog post, comment section and user comment form

@@ -127,6 +127,10 @@ Comment deletion & Comment update
 
 ![mobiledeletecomment](static/wireframes/mobiledeletecomment.PNG) ![mobileupdatecomment](static/wireframes/mobileupdatecomment.PNG)
 
+Content Request 
+
+![mobilecontent](static/wireframes/mobilecontent.PNG
+
 
 ### 5 User Stories
 

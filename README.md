@@ -129,7 +129,7 @@ Comment deletion & Comment update
 
 Content Request 
 
-![mobilecontent](static/wireframes/mobilecontent.PNG
+![mobilecontent](static/wireframes/mobilecontent.PNG)
 
 
 ### 5 User Stories

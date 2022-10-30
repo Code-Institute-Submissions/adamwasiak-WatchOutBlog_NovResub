@@ -236,6 +236,7 @@ The issue has been noted in the unfixed bugs section below.
 
 **Code validation testing**
 The code itself was validated using HTML - W3C HTML Validator,CSS - Jigsaw CSS Validator and Python - PEP8Online.
+For the Content application the python code validation was completed using pycodestyles in Gitpod.
 Results have been outlined below
 
 
